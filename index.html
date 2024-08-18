@@ -11,6 +11,9 @@
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
 
+    <!-- script AOS (Animasi-->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My Css -->
     <link rel="stylesheet" href="style.css" />
     <title>Salam Peci Dengdek</title>
@@ -47,7 +50,7 @@
     <section class="jumbotron text-center">
       <img src="img/logo.png" alt="" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Salam Peci Dengdek</h1>
-      <p class="lead">Amalkan | Amankan | Lestarikan</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -60,7 +63,7 @@
 
     <!-- about -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="zoom-in-up" data-aos-duration="1500">
         <div class="row text-center">
           <div class="col mb-3">
             <h2>About</h2>
@@ -103,7 +106,7 @@ Semoga jami'iyah Ini Mendapat Ridho Allah dan terus bersinar seperti Mentari Duh
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/galery/1.png" class="card-img-top" alt="Puncak Rinjani" />
+              <img src="img/galery/1.png" class="card-img-top" alt="Puncak Rinjani" data-aos="flip-left" data-aos-delay="50" data-aos-duration="500"/>
               <div class="card-body">
                 <p class="card-text">Acara Manaqib Bulanan dan Kajian Kitab Sirrul Ashror</p>
               </div>
@@ -111,7 +114,7 @@ Semoga jami'iyah Ini Mendapat Ridho Allah dan terus bersinar seperti Mentari Duh
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/galery/2.png" class="card-img-top" alt="Mt.Kerinci" />
+              <img src="img/galery/2.png" class="card-img-top" alt="Mt.Kerinci" data-aos="flip-left" data-aos-delay="100" data-aos-duration="750"/>
               <div class="card-body">
                 <p class="card-text">Acara Manaqib Bulanan Sekaligus Haul Guru Mursyid Syeikh Ahmad Sohibul Wafa, Bertempat di Gunung Sumbul Ciomas</p>
               </div>
@@ -119,7 +122,7 @@ Semoga jami'iyah Ini Mendapat Ridho Allah dan terus bersinar seperti Mentari Duh
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/galery/3.png" class="card-img-top" alt="Puncak Kerinci" />
+              <img src="img/galery/3.png" class="card-img-top" alt="Puncak Kerinci" data-aos="flip-left" data-aos-delay="150" data-aos-duration="1000"/>
               <div class="card-body">
                 <p class="card-text">Acara Manaqib Bulanan dan Kajian Kitab Sirrul Ashror</p>
               </div>
@@ -127,7 +130,7 @@ Semoga jami'iyah Ini Mendapat Ridho Allah dan terus bersinar seperti Mentari Duh
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/galery/4.png" class="card-img-top" alt="Mt.Rinjani" />
+              <img src="img/galery/4.png" class="card-img-top" alt="Mt.Rinjani" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1250"/>
               <div class="card-body">
                 <p class="card-text">Tim Konsumsi Hidmah Manaqib Bulanan Tim Konsumsi
                 </p>
@@ -136,7 +139,7 @@ Semoga jami'iyah Ini Mendapat Ridho Allah dan terus bersinar seperti Mentari Duh
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/galery/5.png" class="card-img-top" alt="Mt.sindoro" />
+              <img src="img/galery/5.png" class="card-img-top" alt="Mt.sindoro" data-aos="flip-left" data-aos-delay="250" data-aos-duration="1500"/>
               <div class="card-body">
                 <p class="card-text">Acara Manaqib Bulanan dan Kajian Kitab Sirrul Ashror</p>
               </div>
@@ -213,6 +216,28 @@ Semoga jami'iyah Ini Mendapat Ridho Allah dan terus bersinar seperti Mentari Duh
     </footer>
     <!-- akhir footer -->
 
+    <!-- Sript AOS (Animasi)-->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- script GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+  <script>
+        gsap.registerPlugin(TextPlugin)
+        gsap.to('.lead', {duration: 4, delay: 1, text: 'Amalkan | Amankan | Lestarikan'});
+        gsap.from('.jumbotron img', {duration:1, rotateY: 360, opacity: 0});
+        gsap.from('.navbar', {duration:2, ease: "bounce.out", y: -100});
+        gsap.from('.display-4', {duration:1, x: -50, opacity: 0, delay: 0.5, ease: "back",});
+  </script>
+  
+
+
+
+<!-- script BOOSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxeLDPY5ZR7yBUPOq8jHkypV7HmrZ4G5-FQ8CqXhiNWnwL2f23H0QNxjOZ_kdsuWrYi/exec";
