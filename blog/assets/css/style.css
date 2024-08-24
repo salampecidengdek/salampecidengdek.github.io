@@ -1,6 +1,6 @@
 a{
 	color: #cc6060;
-	text-decoration: none;
+/*	text-decoration: none;*/
 }
 
 a:hover{
@@ -21,7 +21,7 @@ a:hover{
 	background: #2483d6;
 }
 .menu .menu-items a{
-	text-decoration: none;
+/*	text-decoration: none;*/
 	color: #fff;
 	padding: 10px 30px;
 	display: block;
@@ -72,12 +72,12 @@ a:hover{
 .section-title span{
 	font-weight: 400;
 	font-size: 17px;
-	color: #519ac5fc;
+	color: #000000;
 }
 .section-title span:after{
 	content: '';
 	position: absolute;
-	background: #519ac5fc;
+	background: #000000;
 	width: 50px;
 	height: 2px;
 	left: 0;
